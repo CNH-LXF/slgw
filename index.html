@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>南邮通达社团联合会</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link href="img/icon.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/plyr.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+    <div id="fullpage" style="background: url(img/smile.jpg); background-size: cover; background-attachment: fixed;">
+        <div class="section  active" id="page">
+            <div class=" demo-1">
+                <div id="large-header" class="large-header">
+                    <nav class="navbar navbar-inverse navbar-default" id="navbar-example" style="background-color:rgba(0,0,0,0.6); border-color: rgb(0,0,0);">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="moblie-menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                            <img src="img/brand.png" id="brand">
+                        </a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right" id="nav-link">
+                                    <li data-menuanchor="page2"><a id="border" href="#page2">关于我们 <span class="sr-only">(current)</span></a></li>
+                                    <li data-menuanchor="page3"><a id="border" href="#page3">活动展示</a></li>
+                                    <li data-menuanchor="page4"><a id="border" href="#page4">团队介绍</a></li>
+                                    <li data-menuanchor="page5"><a id="border" href="#page5">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title" id="welcome-title">欢迎来到小联的世界</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section page" id="one" data-anchor="firstPage">
+            <div id="sl-introduce">
+                <h1 class="introduce-title" id="title1">社团联合会</h1>
+                <div id="line"></div>
+                <div class="container-fluid ">
+                    <div class="col-sm-7"><img src="img/logo.png" id="introduce-logo" class="img-responsive center-block"></div>
+                    <div class="col-sm-3 ">
+                        <p class="text-center" id="introduce-content">
+                            <br>社团联合会
+                            <br>是在校团委的直接领导下以
+                            <br>“服务社团，管理社团”
+                            <br>为宗旨的学生组织
+                            <br>是全校学生社团的服务，管理和代表机构。</p>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section page" id="two" data-anchor="thirdPage">
+            <!-- 活动介绍 -->
+            <div class="container">
+                <h1 class="introduce-title" style="text-align: center;">活动展示</h1>
+                <div id="line"></div>
+                <div class="row" style="padding-bottom:5rem; ">
+                    <div class="col-sm-4 col-xs-12 text-center">
+                        <div class="activity" id="act1">
+                            <div class="li" style="background: #fff;" id="img1">
+                                <img class="picture" src="img/1.jpeg" >
+                            </div>
+                            <div class="li">
+                                <h4 class="activity-title">活动介绍</h4>
+                                <p>你好社联</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 text-center" style="background-color:#fff; ">
+                        <div class="activity" id="act2">
+                            <div class="li" style="background: #fff;">
+                                <img class="picture" src="img/2.jpeg">
+                            </div>
+                            <div class="li">
+                                <h4 class="activity-title">活动介绍</h4>
+                                <p>你好社联</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 text-center">
+                        <div class="activity" id="act3">
+                            <div class="li" style="background: #fff;">
+                                <img class="picture" src="img/3.jpeg">
+                            </div>
+                            <div class="li">
+                                <h4 class="activity-title">活动介绍</h4>
+                                <p>你好社联</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <ul class="box">
+                    <div class="col-sm-4 col-xs-12"><li><img src="img/1.jpeg" /></li></div>
+                    <div class="col-sm-4 col-xs-12"><li><img src="img/2.jpeg" /></li></div>
+                    <div class="col-sm-4 col-xs-12"><li><img src="img/3.jpeg" /></li></div>
+                </ul> -->
+            </div>
+            <!-- 活动介绍结束 -->
+        </div>
+        <div class="section" id="three">
+            <div class="slide" align="center">
+                <div class="col-sm-8 col-xs-12"><img src="img/bm1/xcb.jpg" style="width: 100%;height: 65rem"></div>
+                <div class="col-sm-4 col-xs-12 text-center" id="bm-introduce">
+                    <h3>宣传部</h3>
+                    <p>宣传部是作为社团联合会的窗口，
+                        <br>负责社联各项重大活动及部分学生社团大型活动的宣传工作，
+                        <br>对校内各学生社团的宣传活动进行帮助和监督管理，
+                        <br>并对活动进行拍摄与后期剪辑。
+                        <br>负责社联的线下宣传事务。
+                        <br>社联各种活动的主持工作，
+                        <br>通过设计与制作各类海报、横幅、书写标语，
+                        <br>用来扩大社联及学生社团在学校，在学生中的影响。</p>
+                </div>
+            </div>
+            <div class="slide" align="center">
+                <div class="col-sm-8 col-xs-12 text-center"><img src="img/bm1/xwxxb.jpg" style="width: 100%;height: 65rem"></div>
+                <div class="col-sm-4 col-xs-12 text-center" id="bm-introduce">
+                    <h3>新闻信息部</h3>
+                    <p>新闻信息部是社联向外界展示社联成果和精神的重要平台，
+                        <br>其主要职能是展现社联风采，
+                        <br>建设社联品牌形象，
+                        <br>为社团活动提供宣传展示的平台。
+                        <br>主要工作负责运营管理社联各项新闻媒体渠道，
+                        <br>主要负责线上宣传工作，展示社团活动，记录活动美好瞬间。</p>
+                </div>
+            </div>
+            <div class="slide" align="center">
+                <div class="col-sm-8 col-xs-12 "><img src="img/bm1/zzb.jpg" style="width: 100%; height: 65rem "></div>
+                <div class="col-sm-4 col-xs-12 text-center" id="bm-introduce">
+                    <h3>组织部</h3>
+                    <p>负责社联各类活动策划的审核，
+                        <br>对社联开展的大型活动进行统筹安排；
+                        <br>负责指导，审核各学生社团的活动策划。
+                        <br>活动期间配合与协助各社团办理高质量的活动；
+                        <br>负责场地的安排及相关工作。</p>
+                </div>
+            </div>
+            <div class="slide" align="center">
+                <div class="col-sm-8 col-xs-12"><img src="img/bm1/wlb.jpg" style="width: 100%; height: 65rem"></div>
+                <div class="col-sm-4 col-xs-12 text-center" id="bm-introduce">
+                    <h3>外联部</h3>
+                    <p>这里有口才与智慧的碰撞，
+                        <br>能力与激情的交流。
+                        <br>最能锻炼人际交往能力，语言表达能力，
+                        <br>拥有赞助组的好口才，
+                        <br>联系组的善交际，
+                        <br>策划组的斐文采。
+                        <br>在外联部，我们筹备资金，凸显胆识，
+                        <br>外引内联，超越前沿。</p>
+                </div>
+            </div>
+            <div class="slide" align="center">
+                <div class="col-sm-8 col-xs-12"><img src="img/bm1/bgzx.jpg" style="width: 100%;height: 65rem"></div>
+                <div class="col-sm-4 col-xs-12 text-center" id="bm-introduce">
+                    <h3>办公中心</h3>
+                    <p>文书写作是办公中心工作的主要组成部分，
+                        <br>如起草编印各类策划通知、新闻资讯、会议记录；
+                        <br>负责保管社团联合会固定资产及各类物品；
+                        <br>同时在活动中做好活动安排，
+                        <br>整理并提供工作所需资料；
+                        <br>协调各部门工作，
+                        <br>确保社联各项工作顺利进行，
+                        <br>是社联内部协调管理的核心与纽带。</p>
+                </div>
+            </div>
+            <div class="slide" algin="center">
+                <div class="col-sm-8 col-xs-12"><img src="img/bm1/fzb.jpg" style="width: 100%; height: 65rem"></div>
+                <div class="col-sm-4 col-xs-12 text-center" id="bm-introduce">
+                    <h3>社团发展部</h3>
+                    <p>负责社联与社团的交流与沟通，
+                        <br>与各个社团联系密切。
+                        <br>保持服务社团的态度，
+                        <br>与各社团社长进行工作上的交流，
+                        <br>全程陪伴每个社团的大型活动，
+                        <br>绘制每个社团的发展蓝图，
+                        <br>追求每个社团的体制完善，
+                        <br>见证每个社团的茁壮成长。</p>
+                </div>
+            </div>
+            <div class="slide" algin="center">
+                <div class="col-sm-8 col-xs-12"><img src="img/bm1/kpb.jpg" style="width: 100%;height: 65rem "></div>
+                <div class="col-sm-4 col-xs-12 text-center" id="bm-introduce">
+                    <h3>考评部</h3>
+                    <p>秉承“公平、公正、公开”的原则，
+                        <br>深入了解各个社团基本情况，
+                        <br>每学期对学院社团进行星级评选；
+                        <br>负责并完善社团奖励机制，
+                        <br>推动学院社团良性健康发展；
+                        <br>负责社团平时活动的考评工作，
+                        <br>提高社团综合水平，及时反馈社团问题和意见；
+                        <br>负责社联内部考核，完善社联工作。</p>
+                </div>
+            </div>
+        </div>
+        <div class="section page" id="four">
+            <div align="center" style="color: white; font-weight: bold; padding-bottom: 5rem;">
+                <h2>在这，你能发现更多</h2></div>
+            <div class="container-fluid" style="padding-bottom: 3rem; ">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2 text-center col-xs-12" id="video" >
+                    <img src="img/video.png" style="width: 15rem;" id="video" data-toggle="modal" data-target=".myModal1">
+                </div>
+                <div class="col-sm-2 text-center col-xs-12" id="wx" >
+                    <img src="img/wxb.png" style="width: 13rem;" data-toggle="popover" data-placement="bottom" id="wx">
+                </div>
+                <div class="col-sm-2 text-center col-xs-12" id="qq" >
+                    <img src="img/qb.png" style="width: 13rem;" id="qq" data-toggle="popover" data-placement="bottom">
+                </div>
+                <div class="col-sm-2 text-center col-xs-12" id="wb" >
+                    <a target="_blank" href="http://weibo.com/p/1005053472900700/home?from=page_100505&mod=TAB&is_hot=1#_loginLayer_1500973637058">
+                        <img src="img/wbb.png" style="width: 13rem;" id="wb" data-toggle="popover" data-placement="bottom">
+                    </a>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="modal fade myModal1">
+                <!--modal,弹出层父级,fade使弹出层有一个运动过程-->
+                <div class="modal-dialog" id="tcc">
+                    <!--modal-dialog,弹出层-->
+                    <div class="modal-content" style="text-align: center;">
+                        <!--modal-content,弹出层内容区域-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="exampleModalLabel">南邮通达宣传视频</h4>
+                        </div>
+                        <!--modal-header,弹出层头部区域-->
+                        <div class="modal-body">
+                            <video controls>
+                                <source src="img/xcsp.mp4" type="video/mp4">
+                            </video>
+                            <!--modal-body,弹出层主体区域-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="color:white;">
+            <div class="container-fluid" id="form">
+                <div align="center">
+                    <h3>加入我们</h3></div>
+                <div>
+                    <form style="letter-spacing: 4px;">
+                        <div class="col-sm-5 col-xs-12">
+                            <div class="form-group">
+                                <label for="Name">姓名</label>
+                                <input type="text" class="form-control" id="Name" placeholder="姓名" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="Gender">性别</label>&nbsp&nbsp
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="Gender" value="option1">男
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="Gender" value="option2">女
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="Id">学号</label>
+                                <input type="text" class="form-control" id="Id" placeholder="请输入学号" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">专业</label>
+                                <select class="form-control">
+                                    <option>选择专业</option>
+                                    <option>通信工程（嵌入式）</option>
+                                    <option>通信工程</option>
+                                    <option>计算机科学与技术（嵌入式）</option>
+                                    <option>计算机科学与技术</option>
+                                    <option>软件工程（嵌入式）</option>
+                                    <option>软件工程</option>
+                                    <option>信息管理与信息系统</option>
+                                    <option>金融工程</option>
+                                    <option>财务管理</option>
+                                    <option>自动化</option>
+                                    <option>电气工程及自动化</option>
+                                    <option>信息工程</option>
+                                    <option>网络工程</option>
+                                    <option>网络工程（嵌入式）</option>
+                                    <option>物联网工程（嵌入式）</option>
+                                    <option>数字媒体技术</option>
+                                    <option>光电信息科学与工程</option>
+                                    <option>电子科学与技术</option>
+                                    <option>市场营销</option>
+                                    <option>物流管理</option>
+                                    <option>电子商务</option>
+                                    <option>广告学</option>
+                                    <option>金融工程</option>
+                                    <option>信息管理与信息系统</option>
+                                    <option>财务管理</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">电话</label>
+                                <input type="email" class="form-control" id="phone" placeholder="请输入电话" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="qq">QQ</label>
+                                <input type="email" class="form-control" id="qq" placeholder="请输入qq号码" required="required">
+                            </div>
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-5 col-xs-12">
+                            <div class="form-group">
+                                <label for="Email">电子邮箱</label>
+                                <input type="email" class="form-control" id="Email" placeholder="sl@example.com">
+                            </div>
+                            <div class="form-group ">
+                                <label for="department">意向部门</label>
+                                <br>
+                                <select class="form-control ">
+                                    <option>第一意向</option>
+                                    <option>新闻信息部</option>
+                                    <option>宣传部</option>
+                                    <option>办公中心</option>
+                                    <option>组织部</option>
+                                    <option>外联部</option>
+                                    <option>考评部</option>
+                                    <option>发展部</option>
+                                </select>
+                                <select class="form-control ">
+                                    <option>第二意向</option>
+                                    <option>新闻信息部</option>
+                                    <option>宣传部</option>
+                                    <option>办公中心</option>
+                                    <option>组织部</option>
+                                    <option>外联部</option>
+                                    <option>考评部</option>
+                                    <option>发展部</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="self-introduce">个人介绍</label>
+                                <textarea class="form-control" rows="3" id="self-introduce" required="required" cols="40"></textarea>
+                            </div>
+                            <div align="right">
+                                <button type="submit" class="btn btn-default btn-primary ">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="button">
+                <button class="btn btn-primary btn-lg">加入我们</button>
+            </div>
+            <!-- 表单盒子end -->
+            <div class="container-fluid" id="footer" style="position: absolute; bottom: 0;">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <h4>小联云计划</h4>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img src="img/kh.png" style="width: 30rem; padding-top:">
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h4>友情链接</h4>
+                    </div>
+                    <div class="col-sm-12" align="center" style="padding-top: 5rem;">
+                        <p>Copyright ©2017 南邮通达社团联合会 All Rights Reserved.
+                            <br> 京ICP备1000000号
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/demo-1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="js/plyr.js"></script>
+    <script>
+    plyr.setup();
+    </script>
+    <script type="text/javascript">
+    var mediawidth = document.body.clientWidth
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            scrollBar: true, //滚动条
+            fitToSection: false,
+            responsiveWidth: 768,
+            slidesNavigation: true,
+            controlArrowColor: '#C5CBE3',
+            navigationColor: '#C5CBE3',
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+
+        });
+
+    });
+    </script>
+    <script type="text/javascript">
+    $('#wx').popover({
+        trigger: 'hover', //鼠标以上时触发弹出提示框
+        html: true, //开启html 为true的话，data-content里就能放html代码了
+        placement:'bottom',
+        content: "<img src='img/wxx.png'>"
+    });
+    $('#qq').popover({
+        trigger: 'hover', //鼠标以上时触发弹出提示框
+        html: true, //开启html 为true的话，data-content里就能放html代码了
+         placement:'bottom',
+        content: "<img src='img/qq.jpg'>"
+    });
+    </script>
+</body>
+
+</html>
