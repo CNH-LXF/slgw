@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>社联官网修正版</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/impress-demo.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <div class="demo-1">
+                <div id="large-header" class="large-header">
+                    <!-- 导航开始 -->
+                    <nav class="navbar navbar-default navbar-inverse">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                            <img src="img/brand.png" id="brand">
+                        </a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right" id="links">
+                                    <li><a href="#page2" id="border">社联 <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#page3" id="border">社彩</a></li>
+                                    <li><a href="#page4" id="border">Link</a></li>
+                                    <li><a href="#page5" id="border">Link</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                    <!-- 导航结束 -->
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title">欢迎来到小联的世界</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section section1" >
+            <h1 id="title">社团联合会</h1>
+            <h3 id="title">你的人生，必是不甘平庸</h3>
+            <p>社联,</p>
+            <img src="img/logo.png">
+        </div>
+        <div class="section section2" >
+            <div style="">
+                <div class="fallback-message">
+                    <p>您的浏览器不支持此特效, 所以你会看到这里</p>
+                    <p>最好使用最新的 <b>Chrome</b>, <b>Safari</b> 或 <b>Firefox</b> 浏览器.</p>
+                </div>
+                <div id="impress">
+                    <div id="bored" class="step active" data-x="-1000" data-y="-1500">
+                        <p>黄鹤楼</p>
+                    </div>
+                    <div class="step" data-x="0" data-y="-1500">
+                        <q>古人西祠黄鹤去</q>
+                    </div>
+                    <div class="step" data-x="1000" data-y="-1500">
+                        <q>此地空余</q>
+                    </div>
+                    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+                        <span class="try">then you should try</span>
+                        <h1>黄鹤楼</h1>
+                        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+                    </div>
+                    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+                        <p>黄鹤一去不复返</p>
+                    </div>
+                    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+                        <p>白云千载</p>
+                    </div>
+                    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+                        <p>空悠悠</p>
+                    </div>
+                    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+                        <p>晴川历历</p>
+                    </div>
+                    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+                        <p>有了汉阳树</p>
+                    </div>
+                    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+                        <p>芳草萋萋鹦鹉洲</p>
+                    </div>
+                    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+                        <p>日暮相关何处是啊</p>
+                    </div>
+                    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+                        <p>烟波江上使人愁</p>
+                    </div>
+                    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+                    </div>
+                </div>
+                <div class="hint">
+                    <p>使用键盘或鼠标来移动</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section4" >
+            <h2>在这，你能发现更多</h2>
+            <div class="col-sm-2 col-xs-12 text-center"></div>
+            <div class="col-sm-2 col-xs-12 text-center"><img src="img/video.png" id="video" style="width: 8rem;"></div>
+            <div class="col-sm-2 col-xs-12 text-center"><img src="img/wxb.png" data-toggle="popover" data-placement="bottom" id="wx"></div>
+            <div class="col-sm-2 col-xs-12 text-center"><img src="img/qb.png" data-toggle="popover" data-placement="bottom" id="qq"></div>
+            <div class="col-sm-2 col-xs-12 text-center"><a target="_blank" href="http://weibo.com/p/1005053472900700/home?from=page_100505&mod=TAB&is_hot=1#_loginLayer_1500973637058"><img src="img/wbb.png"></a></div>
+            <div class="col-sm-2 col-xs-12 text-center"></div>
+           
+
+            
+        </div>
+        <div class="section section5">
+            <!-- <div class="container-fluid"> -->
+            <div id="form">
+                <form>
+                    <p align="center">加入我们</p>
+                    <div class="col-sm-5 col-xs-12">
+                        <div class="form-group">
+                            <label for="Name">姓名</label>
+                            <input type="text" class="form-control" id="Name" placeholder="姓名" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="Gender">性别</label>&nbsp&nbsp
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="Gender" value="option1">男
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="Gender" value="option2">女
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="Id">学号</label>
+                            <input type="text" class="form-control" id="Id" placeholder="请输入学号" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">专业</label>
+                            <select class="form-control">
+                                <option>选择专业</option>
+                                <option>通信工程（嵌入式）</option>
+                                <option>通信工程</option>
+                                <option>计算机科学与技术（嵌入式）</option>
+                                <option>计算机科学与技术</option>
+                                <option>软件工程（嵌入式）</option>
+                                <option>软件工程</option>
+                                <option>信息管理与信息系统</option>
+                                <option>金融工程</option>
+                                <option>财务管理</option>
+                                <option>自动化</option>
+                                <option>电气工程及自动化</option>
+                                <option>信息工程</option>
+                                <option>网络工程</option>
+                                <option>网络工程（嵌入式）</option>
+                                <option>物联网工程（嵌入式）</option>
+                                <option>数字媒体技术</option>
+                                <option>光电信息科学与工程</option>
+                                <option>电子科学与技术</option>
+                                <option>市场营销</option>
+                                <option>物流管理</option>
+                                <option>电子商务</option>
+                                <option>广告学</option>
+                                <option>金融工程</option>
+                                <option>信息管理与信息系统</option>
+                                <option>财务管理</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">电话</label>
+                            <input type="email" class="form-control" id="phone" placeholder="请输入电话" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="qq">QQ</label>
+                            <input type="email" class="form-control" id="qq" placeholder="请输入qq号码" required="required">
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div class="form-group">
+                            <label for="Email">电子邮箱</label>
+                            <input type="email" class="form-control" id="Email" placeholder="sl@example.com">
+                        </div>
+                        <div class="form-group ">
+                            <label for="department">意向部门</label>
+                            <br>
+                            <select class="form-control ">
+                                <option>第一意向</option>
+                                <option>新闻信息部</option>
+                                <option>宣传部</option>
+                                <option>办公中心</option>
+                                <option>组织部</option>
+                                <option>外联部</option>
+                                <option>考评部</option>
+                                <option>发展部</option>
+                            </select>
+                            <select class="form-control ">
+                                <option>第二意向</option>
+                                <option>新闻信息部</option>
+                                <option>宣传部</option>
+                                <option>办公中心</option>
+                                <option>组织部</option>
+                                <option>外联部</option>
+                                <option>考评部</option>
+                                <option>发展部</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="self-introduce">个人介绍</label>
+                            <textarea class="form-control" rows="3" id="self-introduce" required="required" cols="40"></textarea>
+                        </div>
+                        <div align="right">
+                            <button type="submit" class="btn btn-default btn-primary btn-lg">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- </div> -->
+            <!-- 表单盒子end -->
+            <div class="container-fluid" id="footer" style="position: absolute; bottom: 0;">
+                <div class="col-sm-4 text-center">
+                    <h4>小联云计划</h4>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img src="img/kh.png">
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h4>友情链接</h4>
+                </div>
+                <div class="col-sm-12" align="center">
+                    <p>Copyright ©2017 南邮通达社团联合会 All Rights Reserved.
+                        <br> 京ICP备1000000号
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/impress.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/demo-1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/activity.js"></script>
+    <script src="js/move.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            navigation: true,
+            navigationColor: '#fff',
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+            // verticalCentered: false,
+            controlArrowColor: '#333',
+
+
+            // 滚动到某一屏后产生的动画效果
+            afterLoad: function(link, index) {
+                switch (index) {
+                    case 2:
+                        move('.section1 h1').scale(1.5).end();
+                        move('.section1 p').set('margin-top', '5%').end();
+                        break;
+
+
+                    default:
+                        break;
+                }
+            },
+            //离开某一屏后恢复到初始效果
+            onLeave: function(link, sl) {
+                switch (sl) {
+                    case 1:
+                        move('.section1 h1').scale(1).end();
+                        move('.section1 p').set('margin-top', '400px').end();
+                        break;
+
+                    default:
+                        break;
+                }
+            },
+
+        })
+    });
+    </script>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+    <script>
+    impress().init();
+    </script>
+    <script type="text/javascript">
+    $('#wx').popover({
+        trigger: 'hover', //鼠标以上时触发弹出提示框
+        html: true, //开启html 为true的话，data-content里就能放html代码了
+        placement: 'bottom',
+        content: "<img src='img/wxx.png'>"
+    });
+    $('#qq').popover({
+        trigger: 'hover', //鼠标以上时触发弹出提示框
+        html: true, //开启html 为true的话，data-content里就能放html代码了
+        placement: 'bottom',
+        content: "<img src='img/qq.jpg'>"
+    });
+    </script>
+    <div class="modal fade" id="myModal" >
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">社团联合会宣传视频</h4>
+                </div>
+                <div class="modal-body text-center" style="padding:0">
+                    <video controls style="width: 100%" id="myvideo" >
+                        <source src="img/xcsp.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="modal-footer">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+       
+        $('#video').on('click',function(){
+            $('#myModal').modal('show')
+        });
+        $('#myModal').on('hide.bs.modal',function () {
+            $('#myvideo').get(0).pause()
+        });
+    </script>
+</body>
+
+</html>
