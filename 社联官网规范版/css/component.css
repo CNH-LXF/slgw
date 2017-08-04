@@ -214,6 +214,21 @@ form button{
 	color:white;
 	font-size: 
 }
+#button{
+    margin-top: -15rem;
+   text-align: center;
+}
+@media(min-width:767px){
+    #button{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    #form{
+        display: none;
+    }
+
+}
 #footer{
 	background: #222324;
 	color: white;

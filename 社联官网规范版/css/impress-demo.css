@@ -46,7 +46,7 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    /*vertical-align: baseline;*/
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -187,7 +187,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -581,7 +581,7 @@ a:focus {
     position:absolute;
     left: 0;
     right: 0;
-    bottom: 200px;
+    bottom: 150px;
 
     background: rgba(0,0,0,0.5);
     color: #EEE;
